@@ -1,0 +1,28 @@
+@import "./base.css";
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+:root{
+    --title-font:'Russo One', sans-serif;
+    --white: #d9d9d9;
+    --green:#5fc33b;
+    --green-opacity:#5fc33b46;
+    --white-opacity:#d9d9d9be;
+    --title-font: "cutive"
+}
+
+
+
+
+
+/* sobre mi */
+

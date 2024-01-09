@@ -3,27 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/css/style.css">
     <title>Full Stack Developer</title>
 </head>
 <body>
     <header>
-        
-        <a class="logo" href="#" ><code id="texto-animado"></code></a>
-        <nav>
-            <ul>
-                <li ><a href="#">Sobre mi</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
+        <a class="autor" href="#" ><code id="texto-animado"></code></a>
+            <nav>
+                <ul>
+                    <li ><a href="#">Sobre mi</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
         
     </header>
+    
 
     <!-- primera section -->
 
-    <section class="saludo">
+    <section class="saludo absolute-gradient" >
         <div class="word">
             <span>H</span>
             <span>O</span>
@@ -42,14 +41,32 @@
                 <p>Me formé en el Bootcamp de Factoria F5, descubri la programación y me enamoré desarrollo de software.</p>
                 <p>Me definen en tres palabras  compromiso, pasion y alegria. Y mis objetivos son aprender, mejorar y disfrutar.</p>
             </div>
-            <img id="foto" src="/src/img/fotofelix.png" alt="">
+            <img id="foto" src="./src/img/aboutme-img/fotofelix_prev_ui.png" alt="">
         </article>
         
     </section>
-    <section>
+
+    <section  id="proyectos">
+        
+        <h2 class="neon">Projectos</h2>
+        <div class="gallery">
+            <article class="card">
+                <img class="card-img" src="src\img\projectos\touchthedom.png" alt="projecto1">
+                <h4 class="card-title">Wider world</h4>
+                <p></p>
+            </article>
+            <article class="card">
+                <img class="card-img" src="src\img\projectos\touchthedom.png" alt="projecto1">
+                <h4 class="card-title">Touch the Dom</h4>
+                <p></p>
+            </article>
+            
+            
+        </div>
 
     </section>
-    <script src="script.js"></script>
+    <script src="./src/js/script.js"></script>
+
 </body>
     
 </html>

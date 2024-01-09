@@ -1,0 +1,62 @@
+#proyectos{
+  border: 2px solid rgb(151, 31, 31);
+    width: 100%;
+    
+    
+    background: #313030;
+    
+}
+proyectos :hover{
+
+}
+.neon {
+    color: #fff;
+    text-shadow:
+      0 0 5px #3b3b3b,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px rgb(0, 255, 0),
+      0 0 80px rgb(0, 255, 0),
+      0 0 90px rgb(0, 255, 13),
+      0 0 100px rgb(255, 60, 0),
+      0 0 150px rgb(81, 201, 181);
+      opacity: 0.7;
+  }
+  
+#proyectos h2,h3{
+    color: var(--white);
+    text-align: center;
+
+}
+.gallery {
+    columns: 2;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    margin-bottom: 32px;
+    
+}
+
+.card {
+    padding-top: 50px;
+    height: 100;
+    width:100;
+    min-width: 400px;
+    overflow-y: scroll;
+    color: #FFF;
+    font-size: 2em;
+    align-items: center;  
+    
+}
+.card::-webkit-scrollbar{
+    display: none;
+}
+
+.card img{
+    padding: 5rem;
+    width:100% ;
+    height: auto;
+   
+   
+    
+}

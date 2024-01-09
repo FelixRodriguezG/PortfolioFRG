@@ -1,3 +1,5 @@
+// header scrolldown //
+
 window.addEventListener("scroll", function(){
     var header =  document.querySelector("header");
     header.classList.toggle("scroll_down",this.window.scrollY>0)
@@ -21,14 +23,14 @@ var texto = "Felix Rodriguez Porfolio #2024";
   }
  
   var textoAnimado = document.getElementById("texto-animado");
-  textoAnimado.style.fontSize = "1vw"; // ajustar el tamaño del texto al ancho de la ventana del navegador
+  textoAnimado.style.fontSize = "1.5vw"; // ajustar el tamaño del texto al ancho de la ventana del navegador
   textoAnimado.style.lineHeight = "1.5"; // reducir el interlineado
   textoAnimado.style.color = ""; // cambiar el color de la letra a naranja
   escribirTexto(texto, textoAnimado);
    
   // Actualizar el tamaño del texto al cambiar el tamaño de la ventana del navegador
   window.addEventListener('resize', function() {
-    textoAnimado.style.fontSize = "";
+    textoAnimado.style.fontSize = "1vw";
   });
 
 //Animacion saludo//
