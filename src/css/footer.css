@@ -1,0 +1,56 @@
+.container_footer {
+    border-top: 2px solid green;
+    pointer-events: visiblePainted;
+    padding: 30px 0;
+    background: var(--black-card);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -10;
+}
+.icon{
+    height: 20x;
+    width: 20px;
+    z-index: 20;
+}
+.container_footer li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    margin: 0 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.container_footer li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #111;
+    border-radius: 6px;
+    z-index: 1;
+    transition: all 0.3s ease-in;
+}
+
+.container_footer li:hover:before {
+    transform: rotate(360deg);
+    border-radius: 50%;
+}
+
+.container_footer li a span {
+    color: whitesmoke;
+    font-size: 28px;
+    line-height: 70px;
+    transition: all 0.3s ease-out;
+}
+
+.container_footer li:hover a span {
+    transform: scale(1.2)
+}

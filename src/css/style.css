@@ -1,28 +1,69 @@
 @import "./base.css";
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
 
 *,
 *:after,
 *:before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
     text-decoration: none;
-    
+
 }
-:root{
-    --title-font:'Russo One', sans-serif;
+
+:root {
+    --title-font: 'Jost', sans-serif;
+    --text-font: 'apple';
     --white: #d9d9d9;
-    --green:#5fc33b;
-    --green-opacity:#5fc33b46;
-    --white-opacity:#d9d9d9be;
-    --title-font: "cutive"
+    --green: #40c50f;
+    --black: rgb(26, 25, 25);
+    --black-card: #313030;
+    --green-opacity: #5fc33b46;
+    --white-opacity: #d9d9d9be;
+}
+
+html {
+    box-sizing: border-box;
+    background: #3a3937;
+
+    font-size: 16px;
+
+}
+
+body {
+
+    margin: 1.5%;
+    background-color: #313030;
+
+
+}
+
+/*estilos scrollbar*/
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(96, 99, 94);
 }
 
 
-
-
-
-/* sobre mi */
-
+.animacion-block {
+    
+    animation: slideInFromLeft 1s ease-out forwards;
+  }
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }

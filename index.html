@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
     <title>Full Stack Developer</title>
 </head>
+
 <body>
     <header>
-        <a class="autor" href="#" ><code id="texto-animado"></code></a>
-            <nav>
-                <ul>
-                    <li ><a href="#">Sobre mi</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-        
+        <a class="autor" href="#"><code id="texto-animado"></code></a>
+        <nav>
+            <ul>
+                <li><a class="nav-hover" href="">Sobre mi</a></li>
+                <li><a class="nav-hover" href="#">Proyectos</a></li>
+                <li><a class="nav-hover" href="">Contacto</a></li>
+
+            </ul>
+        </nav>
+
     </header>
-    
 
-    <!-- primera section -->
 
-    <section class="saludo absolute-gradient" >
+    <section class="saludo  animacion-block"><!-- primera section -->
         <div class="word">
             <span>H</span>
             <span>O</span>
@@ -30,43 +31,58 @@
             <span>A</span>
             <span>!</span>
         </div>
+
     </section>
-    
-    <section class="about_container">
-        <article>
-            <div>
-                <h2>¿Quien soy?</h2>
-                <hr>
-                <p>Mi nompbre es Félix y soy desarrollador Web Full Stack. </p>
-                <p>Me formé en el Bootcamp de Factoria F5, descubri la programación y me enamoré desarrollo de software.</p>
-                <p>Me definen en tres palabras  compromiso, pasion y alegria. Y mis objetivos son aprender, mejorar y disfrutar.</p>
-            </div>
-            <img id="foto" src="./src/img/aboutme-img/fotofelix_prev_ui.png" alt="">
+
+    <section class="me-section"><!-- segunda section -->
+        <article class="card_container">    
+                <div class="card">
+                    <h2 class="entry-title">#4 cosas sobre Mi</h2>
+                    <p>Mi nompbre es Félix y soy desarrollador Web Full Stack. </p>
+                    <br>
+                    <p>Me formé en el Bootcamp de Factoria F5, descubri la programación y me enamoré desarrollo de
+                        software.</p>
+                    <br>
+                    <p>Me definen en tres palabras compromiso, pasion y alegria. Y mis objetivos son aprender, mejorar y
+                        disfrutar.</p>
+                </div>
+                <div id="foto"></div>
         </article>
         
     </section>
 
-    <section  id="proyectos">
-        
-        <h2 class="neon">Projectos</h2>
-        <div class="gallery">
-            <article class="card">
-                <img class="card-img" src="src\img\projectos\touchthedom.png" alt="projecto1">
-                <h4 class="card-title">Wider world</h4>
-                <p></p>
-            </article>
-            <article class="card">
-                <img class="card-img" src="src\img\projectos\touchthedom.png" alt="projecto1">
-                <h4 class="card-title">Touch the Dom</h4>
-                <p></p>
-            </article>
-            
-            
+    <section class="section-projects">
+        <h2 class="h2-light" data-heading="#PROYECTOS"></h2>
+        <div class="panels">
+            <div class="panel panel1">
+                <p>Proyecto</p>
+                <p>Touch</p>
+                <p>The Dom</p>
+            </div>
+            <div class="panel panel2">
+                <p>Proyecto</p>
+                <p>Wider</p>
+                <p>World</p>
+            </div>
+            <div class="panel panel3">
+                <p>Proximamente Se</p>
+                <p>vienen</p>
+                <p>cositas</p>
+            </div>
         </div>
-
     </section>
-    <script src="./src/js/script.js"></script>
 
+    <footer>
+        <ul class="container_footer">
+            <li><img class="icon" src="./src/img/icons/Vector.png" alt=""><a href="">
+            <span class="fa fa-github"></span></a></li>
+            <li><img class="icon" src="./src/img/icons/fa_linkedin.png" alt=""><a href="">
+            <span class="fa fa-codepen"></span></a></li>
+            <li><img  class="icon" src="./src/img/icons/eva_github-outline.png" alt="">
+            <a href=""><span class="fa fa-twitter"></span></a></li>
+        </ul>
+    </footer>
+    <script src="./src/js/script.js"></script>
 </body>
-    
+
 </html>
