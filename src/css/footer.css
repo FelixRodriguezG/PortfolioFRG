@@ -9,6 +9,12 @@
     justify-content: center;
     z-index: -10;
 }
+.container_footer h2{
+    position: absolute;
+    
+    left: 35vw;
+    
+}
 .icon{
     height: 20x;
     width: 20px;
