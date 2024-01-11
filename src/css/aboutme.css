@@ -1,13 +1,14 @@
 .me-section {
-height: auto;
+    
     align-items: center;
     border: 10px solid rgb(228, 228, 228);
     transition: 0.7s ease-in-out;
+    scale: 0.9;
 
 }
 
 .card_container {
-    border: solid red;
+    
     background: #313030;
     display: flex;
     align-items: center;
@@ -17,15 +18,13 @@ height: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: clarp(400px,23vw,100%);
-    height: 100vh;
+    
+   
     
 }
 
 
 .card {
-    padding: 2rem;
-    border: 2px solid blue;
     width: 60vw;
 }
 
@@ -40,14 +39,13 @@ height: auto;
 
 .card_container p {
     color: var(--white);
-    padding: 1rem 0 1rem 0;
+    padding: 0.7rem 0;
     font-size: clamp(10px, 1.6vw, 3vw);
     font-weight: 600;
 
 }
 
 #foto {
-    border: 2px solid green;
     width: 360px;
     height: 500px;
     object-fit: contain;
